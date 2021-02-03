@@ -1,0 +1,14 @@
+#!/bin/bash                                                                                                                                      
+
+git add .
+git commit -m "push_that.sh"
+git push origin	Piscine-J1
+
+
+chmod +x push_that.sh
+
+
+!#/bin/bash -eu
+cd /rendu/Piscine-J1
+git pull origin master
+rsync -r . /var/www/html --exclude .git
