@@ -6,5 +6,5 @@ git add .
 
 git commit -m "nouvelle version" 
 
-git pull
+git push
 
